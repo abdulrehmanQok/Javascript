@@ -1,50 +1,120 @@
-// var a=40;
-// var a=50;
-// console.log(a);
-// let b=10;
-// b=20;
-// console.log(b);
+//functions*********************************************************
+// function fun(name){
+//     console.log('Hello, '+name+'!');
+// }
+// fun("abdulrehman");
 
-// const c=30;
-// console.log(c);
-// let age =20;
-// if(age>=18){
-//     console.log('you are eligible to course');
+// function fun(a,b){
+//     // console.log('Hello, World!');
+//     let c= a+b;
+//   console.log(c);
 // }
-// else{
-//     console.log('you are not eligible to course');
+// fun(5,10);
+// let arr=[1,2,3,4,5]
+// let fun=function(){
+//     for(let i=0;i<arr.length;i++){
+//         console.log(arr[i]);
+//     }
 // }
-// let day= parseInt(prompt('enetr any value'));
-// if (day==1){
-//     alert('monday');
+// fun();
+// let arr=[1,2,3,4,5];
+// let arr2=[6,7,8,9,10]
+// function fun(arr){
+//     for(let i=0;i<arr.length;i++){
+//         console.log(arr[i]+5);
+//     }
 // }
-// else if(day==2){
-//     alert('Today is tuesday');
+// fun(arr);
+// fun (arr2);
+// let abc=()=>{
+//     console.log('Hello, World!');
 // }
-// else if(day==3){
-//     alert('Today is wednesday');
+// abc();
+// function login(){
+//     console.log('login successfull');
 // }
-// else if(day==4){
-//     alert('Today is thursday');
-// }
-// else if(day==5){
-//     alert('Today is friday');
-
-// }
-// else if(day==6){
-//     alert('Today is saturday');
-// }
-// else if(day==7){
-//     alert('Today is sunday');
-// }
-// else{
-//     alert('please enter a valid number between 1 and 7');
-// }
-// let a =20;
-// a>=30?(console.log("welcome to pakistan")):()
-for(var i=0; i<10;i++){
-    console.log("my anme is abdul rehman");
-
+let arr=[1,2,3,4,5,6,7,8,9,10];
+function fun(arr){
+    setTimeout(()=>{
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+    },5000)
 }
+fun(arr);
+// function register(){
+     // console.log('register successfull');
+//     setTimeout(()=>{
+//         console.log('register successfull after 3 seconds'),
+//         register()
+//       },3000)
+// }
+
+              //callback****************************************************************
 
 
+// function logout(){
+//     console.log('logout successfull');
+// }
+// logout();
+// register();
+// login();
+// function login(callback){
+//     setTimeout(()=>{
+//         console.log('login successfull');
+//         callback();
+
+//     },5000)  
+// }
+//  function register(callback){
+//     setTimeout(()=>{
+//         console.log('register successfull');
+//         callback();
+//     },5000)
+//  }
+//  function logout(callback){
+//     setTimeout(()=>{
+//         console.log('logout successfull');
+//         callback();
+//     },5000)
+//  }
+//  login(()=>{
+//     register(()=>{
+//     });
+//  });
+// function login(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             return reject("error while executing function");
+
+//         },5000)
+//     })
+// }
+
+// function register(){
+//     setTimeout(() => {
+//         console.log('register successfull');
+
+//     }, 8000)
+// }
+
+// function logout(){
+//     setTimeout(()=>{
+//         console.log('logout successfull');
+
+//     },10000)
+// }
+// login().then(register).then(logout).catch((error)=>{
+//     console.log("error",error);
+
+// })
+// fetch("https://fakestoreapi.com/products").then((response)=>response.json()).then((data)=>console.log(data)).catch((error)=>console.log("error",error));
+
+
+
+//map methid******************************
+// let arr=[22,33,44,5,66,7,8];
+// arr.map((x)=>{
+//     console.log(x*2);
+
+// })
